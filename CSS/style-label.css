@@ -1,0 +1,115 @@
+
+body {
+	background-color: rgba(122, 122,123);
+	color: #111;
+	margin:0px;
+	display: block;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+header {
+	width: 100%;
+}
+
+
+header nav ul{
+	text-align: right;
+	margin: 5px;
+
+}
+
+
+header nav ul li {
+	display: inline-block;
+	text-decoration: none
+
+}
+
+header .header-left{
+	margin: 0;
+	text-align: left;
+	color: #111; /*black*/
+	font-weight: 900px;
+	padding: 0 20px 0  20px;
+	float: left;
+}
+
+a:visited {
+	color: inherit;
+}
+
+/*.cover {
+	background-image: url("../img/coastalhaze.jpg");
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	padding: 30em;
+}
+*/
+.cover-text {
+	text-align: center;
+	padding: 20px;
+	background-color: rgba(200, 200, 200, 5);
+	max-height: 20em;
+}
+
+
+.cover-text h1{
+	height: 500px;
+	font-size: 3em;
+	font-family: 'Fjalla One', sans-serif;;
+	text-shadow: 4px 4px 5px #111:;
+	padding-top: 200px;
+}
+
+.cover-text h4{
+	width: 0px;
+	height: 0px;
+	margin-top: 10px;
+	margin-left: 10px;
+	cursor: pointer; 
+	font-size: 2em;
+	font-family: 'Fjalla One', sans-serif;;
+	text-shadow: 4px 4px 5px #111:;
+}
+
+/*main*/
+
+
+
+main ul {
+
+}
+
+ul li {
+	display: block;
+	text-decoration: none
+	background-color: rgba(122, 1,1, 2);
+}
+
+.labeldetail {
+	background-color: rgba(100, 100, 100);
+	margin: 0px;
+}
+
+.leftcoldet {
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+li > div {
+	color: #fff;
+}
+
+li > div + a:visited {
+	color: inherit;
+}
+
+.maincontent {
+	display: flex;
+	
+}
+
+
+
