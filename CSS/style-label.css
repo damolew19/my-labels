@@ -1,114 +1,280 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 
 body {
-	background-color: rgba(122, 122,123);
-	color: #111;
-	margin:0px;
+	background-color: #222;
+	color: #efefef;
+	margin: auto 0;
+	font-family: Helvetica, 'Times New Roman';
+	font-weight: normal;
+}
+
+div {
 	display: block;
-	font-family: 'Cormorant Garamond', serif;
 }
 
-header {
-	width: 100%;
-}
-
-
-header nav ul{
-	text-align: right;
-	margin: 5px;
-
-}
-
-
-header nav ul li {
-	display: inline-block;
-	text-decoration: none
-
-}
-
-header .header-left{
-	margin: 0;
-	text-align: left;
-	color: #111; /*black*/
-	font-weight: 900px;
-	padding: 0 20px 0  20px;
-	float: left;
+a {
+	text-decoration: none;
+	color: #efefef
 }
 
 a:visited {
 	color: inherit;
 }
 
-/*.cover {
-	background-image: url("../img/coastalhaze.jpg");
-	height: 100%;
-	background-size: cover;
-	background-position: center;
-	padding: 30em;
-}
-*/
-.cover-text {
-	text-align: center;
-	padding: 20px;
-	background-color: rgba(200, 200, 200, 5);
-	max-height: 20em;
+.maxWidth {
+	max-width: 1500px;
+	margin: auto;
 }
 
 
-.cover-text h1{
-	height: 500px;
-	font-size: 3em;
-	font-family: 'Fjalla One', sans-serif;;
-	text-shadow: 4px 4px 5px #111:;
-	padding-top: 200px;
+/* NAV */
+
+header {
+	color: #efefef;
+	width: 100%;
 }
 
-.cover-text h4{
-	width: 0px;
-	height: 0px;
-	margin-top: 10px;
-	margin-left: 10px;
+.logo {
+	display: flex;
 	cursor: pointer; 
-	font-size: 2em;
-	font-family: 'Fjalla One', sans-serif;;
-	text-shadow: 4px 4px 5px #111:;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	background-color: #111;
+	border-radius: 100%;
+	margin: auto;
+}
+
+.logo a {
+	margin: auto;
+}
+
+.logo a h1 {
+	font-size: 1.5em;
+	color: #efefef;
+	font-family: 'Montserrat Alternates';
+	letter-spacing: 2px;
+	width: 100px;
+	text-align: center;
+}
+
+.navBar {
+	position: relative;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.navBar ul {
+	display: flex;
+	justify-content: center;
+}
+
+.navBar ul li {
+	padding: 20px 10px;
+	list-style: none;
+	font-size: 1.2em;
+	font-family: Montserrat;
+}
+
+.navBar ul li a:hover {
+	color: #111;
+	font-weight: bold;
 }
 
 /*main*/
 
+/*Label Header*/
 
 
-main ul {
-
-}
-
-ul li {
-	display: block;
-	text-decoration: none
-	background-color: rgba(122, 1,1, 2);
-}
-
-.labeldetail {
+.labelHeader {
 	background-color: rgba(100, 100, 100);
 	margin: 0px;
-}
-
-.leftcoldet {
-	margin: 0px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-li > div {
-	color: #fff;
-}
-
-li > div + a:visited {
-	color: inherit;
-}
-
-.maincontent {
 	display: flex;
-	
+	padding: 24px 0; 
+}
+
+.leftCol {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	padding-left: 10%;
+}
+
+.leftCol h2 {
+	font-size: 4rem;
+	font-family: Helvetica; 
+	font-weight: normal;
+}
+
+.rightCol {
+	width: 50%;
+	padding-left: 10%;
+}
+
+.rightCol ul li {
+	padding-bottom: 5px;
+	font-family: Helvetica; 
+}
+
+.rightCol ul li a:hover {
+	color: #111;
+}
+
+
+/*Cover*/
+
+.labelCover img {
+	width: 100%;
+}
+
+
+.mainContent {
+	max-width: 750px;
+	margin: auto;	
+}
+
+.mainContent h3 {
+	font-size: 32px;
+}
+
+iframe {
+	width: 100%;
+	height: 422px;
+}
+
+/*labels.html Style*/
+.labelList {
+	width: 100%;
+	display: block;
+	background-color: #999;
+}
+
+.labelList-item {
+	display: flex;
+	padding: 10px;
+	border-top: solid #222;
+}
+
+.labelList-item:hover {
+	background-color: #222;
+}
+
+.labelList-item:hover a {
+	color: #efefef;
+}
+
+.labelList-item a{
+	width: 100%;
+	display: flex;
+	color: #111;
+	font-family: Montserrat;
+
+}
+.labelList-item .name {
+	flex-basis: 70%;
+	text-align: center
+}
+
+.labelList-item .date {
+	flex-basis: 15%;
+	text-align: center;
+	order: 2;
+}
+
+.labelList-item .origin {
+	flex-basis: 15%;
+	text-align: center;
+}
+
+.labelList-item:hover .origin, .labelList-item:hover .name,.labelList-item:hover .date {
+	color: skyblue;
+}
+
+/*More Labels*/
+
+.moreLabels h4 {
+	text-align: center;	
+	text-decoration: underline;
+}
+.moreLabels h4:hover {
+	color: skyblue;
+}
+
+.labelLinkContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding-bottom: 1em;
+	margin: auto;	
+}
+
+.labelLink {
+	position: relative;
+	width: 33%;
+}
+.labelLink:hover .labelName {
+	color: skyblue;
+}
+.labelImage{
+	width: 100%;
+	height: auto;
+}
+.thumbnail {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	transition: all 1s;
+	padding-bottom: 0.5em;
+}
+
+.labelName {
+	text-align: center;
+	font-size: 0.9em;
+	padding-bottom: 0.5em;
+	border-bottom: solid thin #111;
+}
+
+
+/*FOOTER*/
+
+footer {
+	background-color: #111;
+	font-family: 'Times New Roman';
+
+}
+
+
+footer h4 {
+	text-align: center;
+	padding:50px 100px 100px 100px;
+}
+
+
+/*Tablet*/
+
+@media only screen and (max-width: 950px) {
+	.leftCol h2 {
+	font-size: 2rem;
+	}
+	.rightCol ul li {
+	font-size: 0.9rem;
+}
+
+}
+
+/*Phone*/
+
+@media only screen and (max-width: 500px) {
+
+	.navBar ul li {
+	padding: 1em 0.5em;
+	font-size: 1em;
+	}
+
 }
 
 

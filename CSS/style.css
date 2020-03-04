@@ -1,112 +1,393 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 
 body {
-	background-color: rgba(122, 122,123);
-	color: #111;
+	background-color: #222;
+	color: #efefef;
 	margin: auto 0;
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Times New Roman', /*sans-serif;*/;
 }
 
-/* NAV */
-
-header {
-	background-color: rgba(122, 122,123, 5);
-	width: 100%;
+div {
+	display: block;
 }
 
-.main-nav{
-	display: flex;
-	justify-content: flex-end;
-	margin: 5px;
-	list-style-type: none;
+a {
+	text-decoration: none;
+	color: #efefef;
 }
-
-
-li {
-	padding: 10px;
-}
-
 
 a:visited {
 	color: inherit;
 }
 
-.header-left{
-	margin-right: auto;
+.maxWidth {
+	max-width: 1750px;
+	margin: auto;
 }
 
-
-
-.cover {
-	width:100%;
-	height: 50vh;
-	background-image: url(../img/adrian-korte-5gn2soeAc40-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
- 
+.cutSides {
+	width: 75%;
+	margin: auto auto;
 }
 
-.cover h1{
-	width: 0px;
-	height: 200px;
-	margin-top: 10px;
-	margin-left: 10px;
+/* NAV */
+
+header {
+	color: #efefef;
+	width: 100%;
+}
+
+.logo {
+	display: flex;
 	cursor: pointer; 
-	font-size: 3em;
-	font-family: 'Fjalla One', sans-serif;;
-	text-shadow: 4px 4px 5px #111:;
+	position: relative;
+	width: 150px;
+	height: 150px;
+	background-color: #111;
+	border-radius: 100%;
+	margin: auto;
 }
 
+.logo a {
+	margin: auto ;
+}
+
+.logo a h1 {
+	font-size: 1.5em;
+	color: #efefef;
+	font-family: 'Montserrat Alternates';
+	letter-spacing: 2px;
+	width: 100px;
+	text-align: center;
+}
+
+.navBar {
+	position: relative;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.navBar ul {
+	display: flex;
+	justify-content: center;
+}
+
+.navBar ul li {
+	padding: 1em 0.5em;
+	list-style: none;
+	font-size: 1.2em;
+	font-family: Montserrat;
+}
+
+.navBar ul li a:hover {
+	color: #111;
+	font-weight: bold;
+}
 
 /* main */
 
+.cover {
+	position: relative;
+ 	height: 30em;
+ 	display: inline-block;
+ 	width: 100%;
+}
+
+.coverText {
+	position: relative;
+	text-align: center;
+	width: 50%;
+	float: left;
+	height: 480px;
+	background-color: #222;
+}
+
+.coverText h2 {
+	margin: 0 auto;
+	margin-top: 15%;
+	width: 70%;
+	font-size: 60px;
+	color: #efefef;
+}
+
+.coverText p {
+	font-size: 20px;
+	color: #efefef;
+	margin: 2% 0;
+}
+
+.coverButton {
+	font-size: 20px;
+	color: #333 !important;
+	background-color: #efefef;
+	padding: 10px;
+	border-radius: 3px;
+}
+
+.coverImage {
+	position: relative;
+	height: 500px;
+	width: 50%;
+	float: left;
+}
+
+.coverImage img {
+	position: relative;
+	display: block;
+	height: 480px;
+	width: 100%;
+}
+
+.coverControls{
+	display: block;
+}
+
+.coverControls a:hover {
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+
+.btnPrev {
+	position: absolute;
+	top: 40%;
+	left: 1em;
+}
+
+.btnNext {
+	position: absolute;
+	top: 40%;
+	right: 1em;
+}
+
+.coverIndex {
+	display: flex;
+	justify-content: center;
+	padding-top: 2em;
+	padding-bottom: 0.5em;
+
+}
+
+.dots {
+	width: 12px;
+	height: 12px;
+	background-color: #888;
+	border-radius: 100%;
+	margin-right: 10px;
+}
+
+ .active, .dots:hover {
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.fade {
+  animation: fade ease 5.1s;
+  -webkit-animation: fade ease 5.1s;
+  -moz-animation: fade ease 5.1s;
+  -o-animation: fade ease 5.1s;
+}
+
+/*KEYFRAMES*/
+
+@keyframes fade {
+  0% {
+    opacity:0;
+  }
+  80% {
+    opacity:1;
+  }
+  100% {
+  	opacity:0;
+  }
+}
+
+@-moz-keyframes fade {
+  0% {
+    opacity:0;
+  }
+  80% {
+    opacity:1;
+  }
+  100% {
+  	opacity:0;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity:0;
+  }
+ 850% {
+    opacity:1;
+  }
+  100% {
+  	opacity:0;
+  }
+}
+
+@-o-keyframes fade {
+  0% {
+    opacity:0;
+  }
+  80% {
+    opacity:1;
+  }
+  100% {
+  	opacity:0;
+  }
+}
+
+/*RECORD LABELS*/
+
+section {
+	display: block;
+}
+
+main {
+	padding-bottom: 2em;
+}
+
+
 h3 {
-	color: #111;
-	font-family: 'Cormorant Garamond', serif;
-	font-size: 2em;
+	color: #efefef;
+	font-size: 1.5em;
 	font-weight: bold;
-	background-color: rgba(200, 200, 200, 5);
 	background-size: auto auto;
 	border-bottom: solid black;
+	font-family: 'Montserrat Alternates';
+	padding: 20px 10px;
+	border-style: solid;
+	border-color: #efefef; 
+	width: 250px;
+	text-align: center;
+	margin: 1em auto;
 }
 
 .labels {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 0;
+	grid-row-gap: 0;
+	align-items: flex-start;
+	grid-auto-rows: auto;
+}
+
+.labelGrid {
+	position: relative;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	/* flex-flow: row wrap; */
-	justify-content: space-evenly;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.labels h5 {
-	font-size: 1.5em;
-	margin-top: 0;
-	text-align: center;
-	border-bottom: solid 2px #111;
-	padding-bottom: 5px;
-
-}
-
-.thumbnail:hover {
-	filter: brightness(200%);
-	transform: scale(1.05)
-
+.labelImage{
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	box-sizing: border-box;
+	background-position: 50%;
+	position: relative;
+	width: 100%;
 }
 
 .thumbnail {
-	height:350px;
-	width:350px;
+	display: block;
+	height: 100%;
+	width: 100%;
 	transition: all 1s;
+}
+
+.labelName {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	font-size: 1em;
+}
+
+.labelImage:hover {
+	opacity: 0.1;
+	transition: opacity 0.4s;
+	filter: blur(8px);
+}
+
+.labelImage:hover .labelName {
+	display: inline-flex;
+	filter: brightness(200%);
+	transform: scale(1.05);
+	position: absolute;
+
+}
+
+.moreLabels {
+	padding-top: 1em;
+	width: 15%;
+	margin: auto;
+}
+.moreLabels h4 {
+	text-align: center;	
+	border-style: solid;
+	padding: 5px 0;
+	font-size: 1.2em;
+}
+.moreLabels h4:hover {
+	color: skyblue;
 }
 
 /*FOOTER*/
 
 footer {
-	background-color: rgba(200, 200, 200, 5);
+	background-color: #111;
+
 }
+
 
 footer h4 {
 	text-align: center;
-	padding:30px 100px 100px 100px;
+	padding:50px 100px 100px 100px;
+	font-family: 'Times New Roman';
+}
+
+/*Tablet*/
+
+@media only screen and (max-width: 950px) {
+	.coverText {
+		width: 100%;
+	}
+
+	.coverImage {
+		position: absolute;
+		width: 100%;
+		height: 500px;
+		opacity: 0.3;
+	}
+	.coverText h2, .coverText p, .coverButton {
+		position: relative;
+		z-index:2;
+	} 
+}
+
+/*Phone*/
+
+@media only screen and (max-width: 500px) {
+	.labels {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.coverControls {
+		display: none ;
+	}
+
+	.navBar ul li {
+	padding: 1em 0.5em;
+	font-size: 1em;
+	}
 }
 
