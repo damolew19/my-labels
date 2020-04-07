@@ -357,7 +357,7 @@ footer h4 {
 
 /*Tablet*/
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1200px) {
 	.coverText {
 		width: 100%;
 	}
